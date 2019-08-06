@@ -25,15 +25,15 @@ for (var i = 0; i < 15; i++) {
   mylist.push(parseInt(prompt("Digite aqui")));
   console.log(mylist[i]);
 }
-var max = mylist[0];//mylist[0] serve para indicar que deve começar do primeiro numero digitado pelo usuário
-var min = mylist[0];
+var bigger = mylist[0];//mylist[0] serve para indicar que deve começar do primeiro numero digitado pelo usuário
+var smaller = mylist[0];
 
 for (var i = 0; i < mylist.length; i++) {
-  if (mylist[i] < min) {
-    min = mylist[i];
-  } if (mylist[i] > max) {
-    max = mylist[i];
+  if (mylist[i] < smaller) {
+    smaller = mylist[i];
+  } if (mylist[i] > bigger) {
+    bigger = mylist[i];
   }
 }
 
-document.body.append("Valor mínimo " + min + " e " + "Valor máximo " + max + ".");
+document.body.append("Valor mínimo " + smaller + " e " + "Valor máximo " + bigger + ".");
